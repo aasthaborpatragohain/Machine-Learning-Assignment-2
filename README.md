@@ -22,36 +22,6 @@ In this simplified case, we predict *house price using only the area of the hous
 
 ---
 
-##  Mathematical Background  
-
-The linear regression model is:  
-
-\[
-Price = w \times Area + b
-\]
-
-Where:  
-- \( w \) = Weight (slope, price per sq.ft.)  
-- \( b \) = Bias (intercept, base price)  
-
-*Loss Function (Mean Squared Error):*  
-
-\[
-MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - (\hat{y}_i))^2
-\]
-
-*Gradient Descent Updates:*  
-
-\[
-w := w - \alpha \cdot \frac{\partial MSE}{\partial w}, \quad
-b := b - \alpha \cdot \frac{\partial MSE}{\partial b}
-\]
-
-Where:  
-- \( \alpha \) = Learning rate  
-- Updates continue until convergence (loss decreases).  
-
----
 
 ##  Algorithm Steps  
 
